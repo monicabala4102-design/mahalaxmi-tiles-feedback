@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f2f2f2;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Main Box */
+.container {
+  background: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Inputs */
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Stars */
+.stars span {
+  font-size: 26px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars span.active {
+  color: gold;
+}
+
+/* Button */
+button {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Reviews */
+#reviewList {
+  margin-top: 15px;
+}
+
+.review {
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+    margin: 30px auto;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tiles Feedback</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>ABC Tiles Company</h2>
+    <p>Customer Feedback</p>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Rating -->
+    <h3>⭐ Rate Us</h3>
+
+    <div class="stars">
+      <span data-val="1">★</span>
+      <span data-val="2">★</span>
+      <span data-val="3">★</span>
+      <span data-val="4">★</span>
+      <span data-val="5">★</span>
+    </div>
+
+    <p id="ratingText">Your Rating: 0</p>
+
+    <!-- Review -->
+    <h3>✍️ Write Review</h3>
+
+    <input type="text" id="name" placeholder="Your Name">
+
+    <textarea id="review" placeholder="Write your review"></textarea>
+
+    <button onclick="addReview()">Submit Review</button>
+
+    <div id="reviewList"></div>
+
+    <!-- QR Code -->
+    <h3>📱 Review QR Code</h3>
+
+    <div id="qrcode"></div>
+
+
+    <!-- Survey -->
+    <h3>📋 Survey</h3>
+
+    <form id="surveyForm">
+
+      <input type="text" placeholder="Tile Quality" required>
+      <input type="text" placeholder="Price" required>
+      <input type="text" placeholder="Staff Behavior" required>
+      <input type="text" placeholder="Delivery" required>
+      <input type="text" placeholder="Installation" required>
+      <input type="text" placeholder="Showroom Experience" required>
+      <input type="text" placeholder="Recommendation" required>
+      <input type="text" placeholder="Repeat Purchase" required>
+      <input type="text" placeholder="Service" required>
+      <input type="text" placeholder="Overall Satisfaction" required>
+
+      <button type="submit">Send Feedback</button>
+
+    </form>
+
+  </div>
+
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
